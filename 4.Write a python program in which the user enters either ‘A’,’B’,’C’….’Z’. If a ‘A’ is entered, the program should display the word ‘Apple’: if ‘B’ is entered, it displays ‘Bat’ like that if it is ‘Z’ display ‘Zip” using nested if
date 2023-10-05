@@ -1,0 +1,22 @@
+# Prompt the user for input                                                                                                                   R.HARITHA(192210406)
+user_input = input("Enter a character (A to Z): ")
+
+# Convert the input to uppercase to handle lowercase input as well
+user_input = user_input.upper()
+
+# Check the input and display the corresponding word
+if user_input == 'A':
+    print("Apple")
+elif user_input == 'B':
+    print("Bat")
+elif user_input == 'C':
+    print("Cat")
+elif user_input == 'Z':
+    print("Zip")
+else:
+    print("Word not found for the entered character.")
+
+
+OUTPUT
+Enter a character (A to Z): A
+Apple

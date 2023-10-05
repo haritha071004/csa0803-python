@@ -1,0 +1,22 @@
+# Define the size of the pattern                                                                                                                          r.HARITHA(192210406)
+n = 5
+
+# Loop through rows
+for i in range(n):
+    # Loop through columns
+    for j in range(n):
+        # Check if it's the first or last row, or the first or last column
+        if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()  # Move to the next line after each row
+
+
+OUTPUT
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+> 

@@ -1,0 +1,29 @@
+# Constants for HRA and TA percentages                                                                                                           R.HARITHA(192210406)
+HRA_PERCENTAGE = 10
+TA_PERCENTAGE = 5
+
+# Prompt the user for the basic pay
+basic_pay = float(input("Enter the basic pay: "))
+
+# Calculate HRA and TA based on constants
+hra = (HRA_PERCENTAGE / 100) * basic_pay
+ta = (TA_PERCENTAGE / 100) * basic_pay
+
+# Calculate the total salary
+total_salary = basic_pay + hra + ta
+
+# Display the salary components and the total salary
+print(f"Basic Pay: Rs.{basic_pay:.2f}")
+print(f"HRA: Rs.{hra:.2f}")
+print(f"TA: Rs.{ta:.2f}")
+print(f"Total Salary: Rs.{total_salary:.2f}")
+
+
+
+OUTPUT
+Enter the basic pay: 1000
+Basic Pay: Rs.1000.00
+HRA: Rs.100.00
+TA: Rs.50.00
+Total Salary: Rs.1150.00
+> 

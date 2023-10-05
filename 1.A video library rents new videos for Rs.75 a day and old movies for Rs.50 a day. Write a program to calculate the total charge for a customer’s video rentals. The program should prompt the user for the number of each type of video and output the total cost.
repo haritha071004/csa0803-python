@@ -1,0 +1,19 @@
+# Prompt the user for the number of new and old movies rented                                                                                             r.haritha(192210406)
+num_new_movies = int(input("Enter the number of new movies rented: "))
+num_old_movies = int(input("Enter the number of old movies rented: "))                                               
+
+# Calculate the total charge
+new_movie_rate = 75  # Rs.75 per day for new movies
+old_movie_rate = 50  # Rs.50 per day for old movies
+
+total_charge = (num_new_movies * new_movie_rate) + (num_old_movies * old_movie_rate)
+
+# Display the total charge to the user
+print(f"Total charge for {num_new_movies} new movies and {num_old_movies} old movies: Rs.{total_charge}")
+
+
+OUTPUT:
+Enter the number of new movies rented: 2
+Enter the number of old movies rented: 4
+Total charge for 2 new movies and 4 old movies: Rs.350
+> 

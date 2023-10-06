@@ -1,0 +1,35 @@
+# Predefined dictionary of states and their codes                                                                                           R.HARITHA(192210406)
+state_codes = {
+    "California": "CA",
+    "New York": "NY",
+    "Texas": "TX",
+    "Florida": "FL"
+}
+
+# Add another state to the dictionary
+state_codes["Illinois"] = "IL"
+
+# Print all items in the dictionary
+print("States and their codes:")
+for state, code in state_codes.items():
+    print(f"{state}: {code}")
+
+# Try to print the code for a state that doesn't exist with a default value
+state_to_lookup = "Ohio"
+default_code = "N/A"
+
+# Use the get() method to handle the case where the state doesn't exist
+state_code = state_codes.get(state_to_lookup, default_code)
+
+print(f"The code for {state_to_lookup} is {state_code}")
+
+
+OUTPUT
+States and their codes:
+California: CA
+New York: NY
+Texas: TX
+Florida: FL
+Illinois: IL
+The code for Ohio is N/A
+> 

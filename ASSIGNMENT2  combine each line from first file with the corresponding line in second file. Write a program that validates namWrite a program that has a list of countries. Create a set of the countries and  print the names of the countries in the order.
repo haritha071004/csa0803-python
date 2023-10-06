@@ -1,0 +1,22 @@
+# List of countries                                                                                                                        R.HARITHA(192210406)
+countries_list = ["United States", "Canada", "United Kingdom", "Australia", "Canada", "France", "Germany", "Spain"]
+
+# Convert the list to a set to remove duplicates while preserving order
+countries_set = set(countries_list)
+
+# Print the names of countries in the original order
+for country in countries_list:
+    if country in countries_set:
+        print(country)
+        countries_set.remove(country)
+
+
+OUTPUT
+United States
+Canada
+United Kingdom
+Australia
+France
+Germany
+Spain
+> 

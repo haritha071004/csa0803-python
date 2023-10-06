@@ -1,0 +1,21 @@
+# Create a list of the first ten letters of the alphabet                                                                                                         R.HARITHA(192210406)
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+# Print the first three letters from the list using slicing
+print("First three letters:", alphabet[:3])
+
+# Print any three letters from the middle using slicing
+middle_start = len(alphabet) // 2 - 1  # Starting from the middle
+middle_end = middle_start + 3  # Selecting three letters from the middle
+print("Middle three letters:", alphabet[middle_start:middle_end])
+
+# Print the letters from any particular index to the end of the list using slicing
+index_to_start_from = 5  # You can change this index as per your choice
+print("Letters from index", index_to_start_from, "to the end:", alphabet[index_to_start_from:])
+
+
+
+OUTPUT
+First three letters: ['a', 'b', 'c']
+Middle three letters: ['e', 'f', 'g']
+Letters from index 5 to the end: ['f', 'g', 'h', 'i', 'j']

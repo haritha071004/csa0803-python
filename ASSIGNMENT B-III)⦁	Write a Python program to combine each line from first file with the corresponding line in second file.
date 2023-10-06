@@ -1,0 +1,19 @@
+# Define the file paths for the first and second files                                                                                             R.HARITHA(192210406)
+file1_path = "file1.txt"
+file2_path = "file2.txt"
+
+# Define the output file path
+output_file_path = "combined_output.txt"
+
+# Open the first file for reading
+with open(file1_path, "r") as file1:
+    # Open the second file for reading
+    with open(file2_path, "r") as file2:
+        # Open the output file for writing
+        with open(output_file_path, "w") as output_file:
+            # Read and combine lines from both files
+            for line1, line2 in zip(file1, file2):
+                combined_line = line1.strip() + " " + line2.strip() + "\n"
+                output_file.write(combined_line)
+
+print("Lines combined and saved to", output_file_path)

@@ -1,0 +1,42 @@
+# Custom exception classes for name and age validation                                                                                              R.HARITHA(192210406)
+class InvalidNameError(Exception):
+    pass
+
+class InvalidAgeError(Exception):
+    pass
+
+# Function to check if the person can vote
+def can_vote(name, age):
+    try:
+        if not name.isalpha():
+            raise InvalidNameError("Invalid name. Name must contain only alphabetic characters.")
+        
+        age = int(age)
+        if age < 18:
+            raise InvalidAgeError("Sorry, you are not eligible to vote. You must be 18 years or older.")
+        
+        print(f"Congratulations, {name}! You are eligible to vote.")
+    
+    except ValueError:
+        raise InvalidAgeError("Invalid age. Please enter a valid age as a number.")
+    
+
+# Input from the user
+try:
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+
+    can_vote(name, age)
+
+except (InvalidNameError, InvalidAgeError) as e:
+    print(f"Error: {e}")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+
+
+OUTPUT
+Enter your name: hari
+Enter your age: 18
+Congratulations, hari! You are eligible to vote.
+> 
+   

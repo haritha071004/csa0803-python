@@ -1,0 +1,18 @@
+# Define a tuple                                                                                                                     R.HARITHA(192210406)
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+# Get the 4th element (index 3)
+fourth_element = my_tuple[3]
+
+# Get the 4th element from the end (index -4)
+fourth_from_end = my_tuple[-4]
+
+# Print the results
+print("4th element:", fourth_element)
+print("4th element from the end:", fourth_from_end)
+
+
+OUTPUT
+4th element: 4
+4th element from the end: 6
+> 
